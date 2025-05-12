@@ -13,7 +13,7 @@ function convertToRoman(num) {
 	  10:['V', 5],
       11:['IV', 4],
 	  12:['I', 1],
-    }
+    };
 
   let n=798;
 	let ans=""

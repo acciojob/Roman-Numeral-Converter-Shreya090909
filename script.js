@@ -17,23 +17,19 @@ function convertToRoman(num) {
 	let ans=""
 	while (n!=0) 
 	{
-		for (let i in romanmap) 
+		for (let i in romanmap) {
+			let[symbol,value]=romanmap[i];
+			ans+=symbol;
+		    num-=value;
+		    break;
+		}
 			
 		}
-	let value=romanmap[i][0];
-	let num=romanmap[i][1]
-	if(num<=n)
-	{
-		ans=ans+value;
-		n=n-num;
-		break;
-	}
-	}
-
+	
 }
  You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
 
- console.log(convertToRoman(a));
+ console.log(convertToRoman());
 
 
 

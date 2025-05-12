@@ -15,17 +15,17 @@ function convertToRoman(num) {
 	  12:['I', 1],
     };
 	let ans=""
-	while (n!=0) 
-	{
+	while (n!=0) {
 		for (let i in romanmap) {
 			let[symbol,value]=romanmap[i];
+			if(value<=num){
 			ans+=symbol;
 		    num-=value;
 		    break;
 		}
-			
 		}
-	
+		}
+	return ans;
 }
  You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
 
